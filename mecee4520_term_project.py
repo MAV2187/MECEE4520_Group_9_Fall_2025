@@ -1365,8 +1365,8 @@ import pickle
 np.set_printoptions(suppress=True)
 
 PUSHOVER_ENABLED = True  # Set to False to disable notifications
-PUSHOVER_USER_KEY = "uwye9ogj9tf4totxode6vee5o5ae39"  # Get from https://pushover.net
-PUSHOVER_API_TOKEN = "adocvyr8pebgv2d9xzxb7qa9r6r3vf"  # Create an app at https://pushover.net/apps
+PUSHOVER_USER_KEY = ""  # Get from https://pushover.net
+PUSHOVER_API_TOKEN = ""  # Create an app at https://pushover.net/apps
 
 def send_pushover(title, message, priority=0):
     if not PUSHOVER_ENABLED:
