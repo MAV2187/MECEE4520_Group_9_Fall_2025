@@ -1,0 +1,60 @@
+================================================================================
+MODEL TRAINING STATISTICS
+================================================================================
+
+MODEL ARCHITECTURE:
+--------------------------------------------------------------------------------
+Architecture:          Shallow and wide - only 3 hidden layers
+Total Parameters:      9,242,625
+Trainable Parameters:  9,242,625
+
+LAYER STRUCTURE:
+--------------------------------------------------------------------------------
+fc1                  Linear(in_features=1433, out_features=2048, bias=True)
+bn1                  BatchNorm1d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+dropout1             Dropout(p=0.4, inplace=False)
+fc2                  Linear(in_features=2048, out_features=2048, bias=True)
+bn2                  BatchNorm1d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+dropout2             Dropout(p=0.4, inplace=False)
+fc3                  Linear(in_features=2048, out_features=1024, bias=True)
+bn3                  BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+dropout3             Dropout(p=0.3, inplace=False)
+fc4                  Linear(in_features=1024, out_features=1, bias=True)
+
+CONFIGURATION:
+--------------------------------------------------------------------------------
+Training Started:      2025-11-19_10-50-13
+Device:                cuda
+Input Dimension:       1433
+Dataset Size:          47743
+Train Size:            38195
+Test Size:             9548
+Batch Size:            256
+Learning Rate:         0.0001
+Max Epochs:            200
+Loss Function:         MSELoss
+
+DATA PREPROCESSING:
+--------------------------------------------------------------------------------
+X Scaler:              scaler_X.pkl (present)
+Y Scaler:              scaler_Y.pkl (present)
+
+CURRENT BEST MODEL:
+--------------------------------------------------------------------------------
+Best Epoch:            134/134
+Best Test Loss:        0.07362598
+Train Loss at Best:    0.08860870
+Current Learning Rate: 9.77e-08
+Elapsed Time:          72.65 minutes
+
+RECENT EPOCHS:
+--------------------------------------------------------------------------------
+Epoch      Train Loss      Test Loss       Best?     
+--------------------------------------------------------------------------------
+130        0.08719290      0.08105840                
+131        0.08669132      0.07446017                
+132        0.08869922      0.07519368                
+133        0.08686149      0.07638518                
+134        0.08860870      0.07362598      ✓ BEST    
+
+================================================================================
